@@ -2,16 +2,7 @@ body {
 	background-color: hsl(30, 38%, 92%);
 	max-width: 1440px;
 	margin: 0px auto;
-/*	justify-content: center;
-	align-content: center;*/
 	font-size: 14px;
-}
-
-.wrap {
-	/*display: block;
-	width: 100%;
-	height: 100%;*/
-	/*position: relative;*/
 }
 
 .mobile-product-image {
@@ -33,7 +24,6 @@ body {
 .desktop-product-image {
 	display: inline;
 	width: 50%;
-	/*height: 50%;*/
 	float: left;
 	border-radius: 10px 0px 0px 10px;
 	clip: rect(0px,600px,200px,0px);
@@ -43,9 +33,6 @@ body {
 .product {
 	display: inline-block;
 	width: 40%;
-	/*margin-left: 15px;*/
-	/*margin-right: 15px;*/
-	/*text-align: center;*/
 	padding-left: 25px;
 	padding-top: 15px;
 	font-family: 'Montserrat', sans-serif;
