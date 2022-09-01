@@ -14,6 +14,10 @@ body {
 	/*position: relative;*/
 }
 
+.mobile-product-image {
+	display: none;
+}
+
 .container {
 	width: 600px;
 	background-color: white;
@@ -26,12 +30,13 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-.container-img img {
+.desktop-product-image {
 	display: inline;
 	width: 50%;
 	/*height: 50%;*/
 	float: left;
 	border-radius: 10px 0px 0px 10px;
+	clip: rect(0px,600px,200px,0px);
 
 }
 
@@ -94,5 +99,37 @@ body {
 	text-align: center;
 	color: white;
 	border-radius: 10px;
+}
 
+.add-to-cart:hover {
+	cursor: pointer;
+	background-color: hsl(158, 36%, 25%);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+	width: 317px;
+	height: 600px;
+  }
+
+  .desktop-product-image {
+  	display: none;
+  }
+
+  .mobile-product-image{
+  	display: block;
+  	border-radius: 10px 10px 0px 0px;
+  	width: 100%;
+  }
+
+  .product {
+  	padding-top: 0px;
+  	display: block;
+  	width: 90%;
+  	padding-left: 15px;
+  }
+
+  .product h1 {
+  	margin-top: 0px;
+  }
 }
